@@ -328,6 +328,16 @@ Or, run commands directly:
     ./run-on-osx-via-docker.sh python -m pytest
     ./run-on-osx-via-docker.sh python -m pytest -vv -s
 
+
+UBlock Addon Integration
+--------
+In this fork, you have access to three new commands in `openwpm.commands.ublock_commands`:
+- AddonSetupCommand: to install Ublock in the browser.
+- AddonCheckAndUUIDCommand: to validate the installation of the extension and give the firefox addon ID.
+- FilterListLoadCommand: to load a filter list to the addon from a file or a string.
+
+For more info on how to integrate the commands, check `demo_ublock.py`.
+
 Citation
 --------
 
